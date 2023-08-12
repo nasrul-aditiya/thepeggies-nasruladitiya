@@ -24,113 +24,110 @@
             background-color: #cca66074;
         }
         .judul img {
-  max-width: 100%;
-  height: auto; /* This ensures the aspect ratio is maintained */
-}
+            max-width: 100%;
+            height: auto; /* This ensures the aspect ratio is maintained */
+          }
         #myImg1,
-      #myImg2,
-      #myImg3 {
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      #myImg1:hover,
-      #myImg2:hover,
-      #myImg3:hover {
-        opacity: 0.7;
-      }
-
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0); /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-      }
-
-      /* Modal Content (image) */
-      .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-      }
-
-      /* Caption of Modal Image */
-      #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-      }
-
-      /* Add Animation */
-      .modal-content,
-      #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-      }
-
-      @-webkit-keyframes zoom {
-        from {
-          -webkit-transform: scale(0);
+        #myImg2,
+        #myImg3 {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
         }
-        to {
-          -webkit-transform: scale(1);
+        #myImg1:hover,
+        #myImg2:hover,
+        #myImg3:hover {
+          opacity: 0.7;
         }
-      }
-
-      @keyframes zoom {
-        from {
-          transform: scale(0.1);
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0, 0, 0); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
         }
-        to {
-          transform: scale(1);
-        }
-      }
 
-      /* The Close Button */
-      .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      /* 100% Image Width on Smaller Screens */
-      @media only screen and (max-width: 700px) {
+        /* Modal Content (image) */
         .modal-content {
-          width: 100%;
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
         }
-      }
+
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+          from {
+            -webkit-transform: scale(0);
+          }
+          to {
+            -webkit-transform: scale(1);
+          }
+        }
+
+        @keyframes zoom {
+          from {
+            transform: scale(0.1);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
+
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+          .modal-content {
+            width: 100%;
+          }
+        }
     </style>
   </head>
   <body>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fed078;">
@@ -204,10 +201,7 @@
                             <p>"the peggies (ザ・ペギーズ) adalah band rock asal Jepang. Label musiknya adalah Epic Records Japan. Agensinya adalah MOVING ON. Fanclub resminya adalah PG Bee. Dibentuk oleh teman sekelas sekolah menengah, Yuho Kitazawa (Vo/Gt), Makiko Ishiwata (Ba), dan Miku Onuki (Dr), dan memulai kegiatan skala penuh terutama di live house di Tokyo. Pada November 2014, album distribusi nasional pertama “goodmorning in TOKYO” dirilis secara terbatas di Tower Records, dan mereka membuat debutnya dengan single 'Dreamy Journey' pada Mei 2017.<br /><br />Pada 8 Juli 2022, the peggies mengumumkan bahwa aktivitas band akan dihentikan tanpa batas waktu pada akhir September, album terbaik “MMY” akan dirilis pada 7 September, dan tur terakhir sebelum hiatus “the peggies tour 2022 -My White-” akan diadakan mulai 13 September.</p>
                         </div>
                     </div>
-                    
                 </div>
-                
-                
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cca660" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,229.3C384,192,480,96,576,90.7C672,85,768,171,864,208C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -223,14 +217,11 @@
                         <div class="band">
                             <h3>Asal Nama Band</h3>
                             <p>Dimulai ketika Yuho Kitazawa, Makiko Ishiwata, dan Miku Onuki masih di sekolah menegah pertama. ketiganya adalah teman dekat dan teman satu kelas. Suatu hari, Yuho diajak Makiko untuk menonton sebuah konser band, setelah melihat secara langsung penampilan band, Yuho mulai suka pergi menonton konser band hampir setiap minggu. Kemudian, ia bergabung dengan klub musik sekolah dan mulai belajar bermain gitar, dan mulai mempunyai keinginan untuk mejadi seorang penyanyi meskipun saat itu belum bisa untuk mengatakannya.<br /><br />
-
                                 Di tahun kedua sekolah menengah pertama, Yuho memutuskan untuk membentuk sebuah band, ia mengajak dua teman dekatnya untuk menjadi anggota, Makiko dan Miku yang sebelumnya juga sudah aktif di band sekolah.<br /> <br />
                                 Setelah terbentuk pada tahun 2009, band ini aktif dengan nama Riceball dan membuat aktivitas dengan menyanyikan lagu cover di pertunjukan sekolah. Namun, mereka mulai membuat lagu sendiri pada tahun 2011, dan mulai tampil di berbagai pertunjukan yang diadakan di live house.<br /><br />
                                 Pada Februari 2012, mereka mengikuti turnamen band “REVOLUTION ROCK VOL.2” yang di disponsori oleh EMI Music Japan. Tampil di panggung Saitama Super Arena di depan puluhan ribu penonton dan memenangkan turnamen tersebut. Setelah itu, mereka memutuskan untuk mengganti nama band dari Riceball menjadi the peggies. Nama the peggies berasal dari kata “Peggy” yang merupakan nama untuk perempuan dalam bahasa Inggris dan Yunani. Nama ini menggambarkan setiap anggota yang semuanya perempuan.
-                                
-                                </p>
-                        </div>
-                        
+                            </p>
+                        </div> 
                     </div>
                     <div class="col-md">
                         <img id="myImg2" src="images/riceball.jpg" alt="RiceBall" width="90%">
@@ -261,7 +252,8 @@
                             <p>Setelah semua anggota lulus dari sekolah menengah, mereka merilis album distribusi nasional pertama “goodmorning in TOKYO” secara terbatas di Tower Records Pada 19 November 2014. Karya ini berisi total 8 lagu termasuk “I love you” yang ditulis Yuho Kitazawa untuk pertama kalinya ketika band ini dibentuk.<br /><br />
                                 Full album pertama “NEW KINGDOM” dirilis pada 11 November 2015. Sebanyak 9 lagu direkam dalam karya ini termasuk “Glider” yang video musiknya telah dirilis di YouTube resmi the peggies pada 28 Oktober. Setelah itu, untuk memperingati perilisan album tersebut, mereka mengadakan ONE-MAN LIVE pertama “Declaration of War vol.4” pada 10 Desember di Shibuya WWW di Tokyo.<br /><br />
                                 Pada 19 Oktober 2016, the peggies merilis single pertama “Sputnik / LOVE TRIP”. Setelah itu, mereka mengadakan pertunjukan langsung di Shibuya CLUB QUATTRO di Tokyo pada 8 Desember, dan mengumumkan bahwa akan membuat debut major pada tahun depan.<br /><br />
-                                Pada 10 Mei 2017, the peggies membuat debutnya dengan merilis single “Dreamy Journey” dari Epic Records Japan. Selain itu, lagu utama “Dreamy Journey” terpilih sebagai lagu tema ending untuk anime Boruto: Naruto Next Generations yang disiarkan di TV Tokyo mulai 5 April. Setelah itu, untuk memperingati debutnya, mereka mengadakan pertunjukan gratis di Tower Records Shibuya B1F CUTUP STUDIO di Tokyo pada 10 Mei. Single ke-2 “BABY!” dirilis pada 6 September di tahun yang sama. Lagu utama “BABY!” merupakan lagu penutup edisi September untuk program informasi King’s Brunch yang disiarkan di TBS.</p>
+                                Pada 10 Mei 2017, the peggies membuat debutnya dengan merilis single “Dreamy Journey” dari Epic Records Japan. Selain itu, lagu utama “Dreamy Journey” terpilih sebagai lagu tema ending untuk anime Boruto: Naruto Next Generations yang disiarkan di TV Tokyo mulai 5 April. Setelah itu, untuk memperingati debutnya, mereka mengadakan pertunjukan gratis di Tower Records Shibuya B1F CUTUP STUDIO di Tokyo pada 10 Mei. Single ke-2 “BABY!” dirilis pada 6 September di tahun yang sama. Lagu utama “BABY!” merupakan lagu penutup edisi September untuk program informasi King’s Brunch yang disiarkan di TBS.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -284,51 +276,51 @@
       <div id="caption"></div>
     </div>
 
+    <!-- script animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
+    <script>
+    // Get the modal
+      var modal = document.getElementById("myModal");
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img1 = document.getElementById("myImg1");
-  var img2 = document.getElementById("myImg2");
-  var img3 = document.getElementById("myImg3");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img1 = document.getElementById("myImg1");
+      var img2 = document.getElementById("myImg2");
+      var img3 = document.getElementById("myImg3");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
 
-  img1.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-  };
+      img1.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+      };
 
-  img2.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-  };
+      img2.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+      };
 
-  img3.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-  };
+      img3.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+      };
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
-</script>
-
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
   </body>
 </html>

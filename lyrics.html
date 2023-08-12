@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+    />
+    <!-- animate welcome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Lyrics</title>
+    <style>
+        body {
+            font-family: "Poppins";
+            background-color: #cca66074;
+        }
+        .judul img {
+  max-width: 100%;
+  height: auto; /* This ensures the aspect ratio is maintained */
+}
+    </style>
+  </head>
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fed078;">
+      <div class="container animate__animated animate__fadeInDown">
+          <a class="navbar-brand" href="#">
+              <img src="images/the peggies logo.png" alt="Logo" width="200px">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="biography.html">Biography</a></li>
+                <li><a class="dropdown-item" href="pictures.html">Pictures</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="tourdates.html">Tour Date</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Discography
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item active" href="lyrics.html">Lyrics</a></li>
+                <li><a class="dropdown-item" href="sampletrackes.html">Sample Trackes</a></li>
+              </ul>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html">Store</a>
+                </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- judul -->
+    <div class="judul mb-3 text-center pt-5">
+      <div class="container animate__animated animate__fadeInUp animate__delay-1s">
+        <h1>LYRICS</h1>
+        <img src="images/Line 1.png" alt="Line">
+      </div>
+        
+    </div>
+
+    <!-- akhir judul -->
+
+    <!-- konten -->
+    <div class="konten">
+        <div class="container animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="d-flex justify-content-center mb-5 " style="display: flex; flex-wrap: wrap;">
+                <button type="button" class="btn btn-primary active mb-3 me-3" onclick="displayLyrics('CENTIMETER')">CENTIMETER</button>
+                <button type="button" class="btn btn-success mb-3 me-3" onclick="displayLyrics('KIMINOSEI')">KIMI NO SEI</button>
+                <button type="button" class="btn btn-light mb-3 me-3" onclick="displayLyrics('FOOTPRINTS')">FOOTPRINTS</button>
+                <button type="button" class="btn btn-danger mb-3 me-3" onclick="displayLyrics('DREAMYJOURNEY')">DREAMY JOURNEY</button>
+                <button type="button" class="btn btn-dark mb-3 me-3" onclick="displayLyrics('STANDBYME')">STAND BY ME</button>
+            </div>
+            <div class="lirik text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                <p id="song-lyrics"></p>
+            </div>
+        </div>
+    </div>
+    <!-- akhir konten -->
+
+    <!-- js lirik -->
+    <script>
+        // Call displayLyrics with "CENTIMETER" song title when the page loads
+        window.onload = function() {
+            displayLyrics("CENTIMETER");
+        };
+        function displayLyrics(songTitle) {
+            var lyrics = getLyrics(songTitle);
+
+            if (lyrics) {
+                document.getElementById("song-lyrics").innerText = lyrics;
+            } else {
+                document.getElementById("song-lyrics").innerText = "Lyrics not available for this song.";
+            }
+        }
+
+        function getLyrics(songTitle) {
+        // Create an object to store song lyrics by title
+            var songLyrics = {
+            "CENTIMETER":  "[Chorus]\n" +
+                "Unmei nante ienai\n" +
+                "Ato nan senchi chikazukeba iin darou\n" +
+                "Kimi ga ii to ienai mama mitsumeteru ushirosugata\n" +
+                " \n" +
+                "[Verse 1]\n" +
+                "Yoyuu no nai hibi desu\n" +
+                "Deeto nante jishin ga nai na\n" +
+                "Kimi ga mabushii hodo\n" +
+                "Boku wa nasake naku natteku\n" +
+                " \n" +
+                "[Pre-Chorus]\n" +
+                "Aenai jikan purasu kimi ga waratta shunkan waru ni no kono tokimeki to\n" +
+                "Bukiyou na boku kakeru tsuyogari na kimi wa angai purasu kamo tte\n" +
+                "Kizuite shimattara saigo\n" +
+                " \n" +
+                "[Chorus]\n" +
+                "Mada ne unmei nante ienai\n" +
+                "Ato nan senchi chikazukeba iin darou\n" +
+                "Boku wa kimi ni nani wo shite agereru ka na\n" +
+                "Ano hi daijoubu tte egao\n" +
+                "Ato nan senchi saki wo aruiten darou\n" +
+                "Kimi ga ii to ieba oitsukeru no ka na todoku no ka na\n" +
+                " \n" +
+                "[Verse 2]\n" +
+                "Futo shita shunkan ni\n" +
+                "Kimi no samishisa wo shittan da\n" +
+                "Yowai boku wa hora ne\n" +
+                "Hanarerarenaku natteku\n" +
+                " \n" +
+                "[Pre-Chorus]\n" +
+                "Yatto kita chansu purasu itadakenai kono kaiwa waru ni de munashiku tatte\n" +
+                "Futashika na kyou kakeru fuantei na kanjou dakara koso boku wa kimi wo\n" +
+                "Mitsukerareta no kamo shirenai\n" +
+                " \n" +
+                "[Chorus]\n" +
+                "Dakara unmei datte shinjitai\n" +
+                "Ima suu senchi chikazuitemo ii ka na\n" +
+                "Mune wo saku yo furimuite kureru tabi ni\n" +
+                "Kimi no egao mo kotoba mo\n" +
+                "Mou nan senchi tsumotte kieya shinai\n" +
+                "Kireigoto ja katazukerarenai hodo ni omotteiru\n" +
+                " \n" +
+                "[Bridge]\n" +
+                "Unmei datte ieru made\n" +
+                "Waratta you ni miseta kimi ni todoku made\n" +
+                "Tokubetsu janai ima no boku ni dekiru koto\n" +
+                " \n" +
+                "[Chorus]\n" +
+                "Mada ne unmei nante ienai\n" +
+                "Ato nan senchi chikazukeba iin darou\n" +
+                "Boku wa sukoshi kawatte yukeru ki ga suru\n" +
+                "Tadoritsuita toki wa kimi ni\n" +
+                "Daijoubu da yo boku ga saki ni iu kara\n" +
+                "Kimi ga suki da owaranai kono omoi ga todokimasu you ni\n",
+            "KIMINOSEI": "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Okubyou de kakko tsukanai\n" +
+                "Kimi no sei da yo\n" +
+                " \n" +
+                "Sukoshi nobita maegami ni kakureteru kimi no me\n" +
+                "Chotto doko miten no? Kocchi ni kite!\n" +
+                "Kimi ga watashi wo muchuu ni\n" +
+                "Saseru no ni muzukashii koto wa hitotsu mo nai\n" +
+                " \n" +
+                "Yuugata no eki no hoomu nami no oto\n" +
+                "Damaru watashi wo misukashita you ni\n" +
+                "Sonna fuu ni warawanaide\n" +
+                " \n" +
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Okubyou de kakko tsukanai\n" +
+                "Konna hazu janai no ni\n" +
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Dareka wo kirai ni naru no?\n" +
+                "Konna yoru wa munasawagi shika shinai yo\n" +
+                "Haato no mashingan kamaete\n" +
+                "Yoyuu bukkoiteru kimi ni neraiuchi suru no sa\n" +
+                " \n" +
+                "Ima mo sukoshi itamu kizu kakushiteru\n" +
+                "Seifuku nuida tte mie ya shinai honto no kokoro\n" +
+                "Futari narande aruitemo bimyou sugiru kyorikan\n" +
+                "Motto chikazuite yo\n" +
+                " \n" +
+                "Saitei na kotoba itte mitari shita\n" +
+                "Kawaisou na onnanoko tte yatsu ni\n" +
+                "Naranai tame no yobousen\n" +
+                " \n" +
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Wasurerarenai koto bakka\n" +
+                "Fuete itte komaru naa\n" +
+                "Kimi no sei kimi no sei kimi no sei de ima ne\n" +
+                "Watashi wa kirei ni naru no\n" +
+                " \n" +
+                "Kimi janakya iya da tte iitai ima sugu\n" +
+                "Hitorikiri no yoru to zutto koko de matteita nda yo\n" +
+                " \n" +
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Okubyou de kakko tsukanai\n" +
+                "Konna hazu janai no ni\n" +
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+                "Dareka wo kirai ni naru no?\n" +
+                "Konna yoru wa munasawagi shika shinai yo\n" +
+                "Haato no mashingan kamaete\n" +
+                "Yoyuu bukkoiteru kimi ni neraiuchi suru no sa",
+            "FOOTPRINTS": "Sayonara sa ikanakucha\n" +
+                "Boku yo boku ni nare to sakebu\n" +
+                "Tadoritsuku saki de kimi ni\n" +
+                "Mou ichido deaitai no sa\n" +
+                " \n" +
+                "Itsudatte kimi-goshi no sekai wo miteta\n" +
+                "Oto mo naku koboshita namida mo shirazu\n" +
+                "Daijoubu tte kotoba ga kirai nante\n" +
+                "Kyuu ni tsubuyaku kara nani mo ienaku naru\n" +
+                " \n" +
+                "Usugurai sora no saki wo shinjitai\n" +
+                "Akogare wa jibun wo uchikesu tame no mono janai\n" +
+                " \n" +
+                "Sayonara sa mou ikanakucha\n" +
+                "Boku yo boku ni nare to sakebu\n" +
+                "Naze darou kizutsuita tte\n" +
+                "Kotae wo sagashiteru\n" +
+                "Sayonara sa itsuka mata aou\n" +
+                "Kimi yo kimi de are to negau\n" +
+                "Bokura nokosu ashiato\n" +
+                "Mou ichido kasanaru you ni\n" +
+                " \n" +
+                "Aisenakatta\n" +
+                "Kainarashita hazu no koe mo kokoro mo\n" +
+                "Boku rashiku ikitatte\n" +
+                "Dare mo namae wo yonde kurenai to omotteta\n" +
+                "Oitsukitakute haritsuketa egao ni\n" +
+                "Kimi wa kidzuiteita kara me wo sorashita no?\n" +
+                " \n" +
+                "Tsumazuite kidzuku genzaichi\n" +
+                "Kawaritai\n" +
+                "Yooi sareta seikai ateru tame no boku janai\n" +
+                " \n" +
+                "Sayonara sa mou ikanakucha\n" +
+                "Boku ga boku ni nareru you ni\n" +
+                "Dareka no koe no mama ja\n" +
+                "Kimi ni todokanai\n" +
+                "Sayonara wa ashita wo yobu sign\n" +
+                "Kimi ga kimi wo aiseru you ni\n" +
+                "Kumotta kagami sutete\n" +
+                "Mou ichido waraeru hi made\n" +
+                " \n" +
+                "Massugu ni mirai wo mitsumeru hodo\n" +
+                "Ashiato wa hizumi ni natte yuku\n" +
+                "Demo ikiteiru\n" +
+                "Sou kanjirareru\n" +
+                " \n" +
+                "Sayonara sa mou ikanakucha\n" +
+                "Boku yo boku ni nare to sakebu\n" +
+                "Naze darou kizutsuita tte\n" +
+                "Kotae wo sagashiteru\n" +
+                "Sayonara sa itsuka mata aou\n" +
+                "Kimi yo kimi de are to negau\n" +
+                "Bokura nokosu ashiato\n" +
+                "Mou ichido kasanaru you ni\n" +
+                "Mou ichido deaeru you ni",
+            "DREAMYJOURNEY": "'Nee bokutachi wa kono mama motto tooku made yukeru yo ne'\n" +
+                "Kizutsuita mune wa, mada hirihiri to oto wo tatete\n" +
+                "Boku wo aseraseru kedo demo ne, mada ne,\n" +
+                "Hakushi datta chizu wa kakikake no mama\n" +
+                "Mirai wo shiritagatteru\n" +
+                "\n" +
+                "Ichiichi chiratsuku kage ni katte ni\n" +
+                "Shoubu wo shikakete wa naitari warattari shite sa\n" +
+                "\n" +
+                "Doriimii jaanii dokomadedatte itteyaru sa sukoshi kowakutemo\n" +
+                "Doriimii jaanii hitotsuzutsu de ii arinomama wo\n" +
+                "Shoumei suru no sa ima kono basho de\n" +
+                "\n" +
+                "Jishin ga nai wa raise ni dareka wo hitei shitemo, sore wa\n" +
+                "Jibun wo koutei shita koto ni wa naranai n da\n" +
+                "\n" +
+                "Ushiro ni tsudzuku michi soko ni oitekita\n" +
+                "Koukai ya omoide ga kocchi wo miteru\n" +
+                "Saa susumou\n" +
+                "\n" +
+                "Doriimii jaanii dokomadedatte itteyaru sa bokura biriivaa\n" +
+                "Doriimii jaanii dareka no tokubetsu ni narou to agaku mae ni\n" +
+                "Jibun no tokubetsu ni nare\n" +
+                "\n" +
+                "Mada todokanai yo uso wo tsuite sa\n" +
+                "Hitori ni natta yoru wa namida wo kakushita\n" +
+                "Kizutsuite suriherashitekita kokorotachi ga\n" +
+                "Ima boku wo tsuyoku saseteyuku\n" +
+                "\n" +
+                "Doriimii jaanii\n" +
+                "Mirai wa subete bokura no mono sa hora mae wo mite\n" +
+                "Doriimii jaanii hitotsuzutsu de ii arinomama wo\n" +
+                "Shoumei suru no sa ima kono basho de",
+            "STANDBYME": "sutando bai mi- onegai\n" +
+                "boku wa boku wa tsuyoku nareru no kana\n" +
+                "namida ga ame ni sarawarete'ku\n" +
+                "kimi no netsu ni dakaretai\n" +
+                "\n" +
+                "hanatte oita kiekake no denkyuu\n" +
+                "aru asa sotto akari wa kiete'ta\n" +
+                "marude kimi to boku mitai\n" +
+                "tsunaida te no hakanasa wo shiru\n" +
+                "\n" +
+                "kumori garasu kono uchuu no mukou\n" +
+                "kasuka ni mieru kimi ga iru 'n da ne\n" +
+                "honto wa sa kidzuite'ru\n" +
+                "ima no kimi ni furerarenu kyori\n" +
+                "\n" +
+                "hiza wo kakaete akogarete ita no wa\n" +
+                "itsuka no zanzou\n" +
+                "\n" +
+                "sutando bai mi- onegai\n" +
+                "boku wa boku wa tsuyoku nareru no kana\n" +
+                "kimi ga ima koko ni inakutemo\n" +
+                "te wo nobasu jishin wo kure yo\n" +
+                "sutando bai yu- onegai\n" +
+                "nanimokamo wo topparatte shimaitai\n" +
+                "namida ga ame ni sarawarete'ku\n" +
+                "kimi no netsu ni dakaretai dake nan da\n" +
+                "\n" +
+                "kimi no inai heya de me ga sameru\n" +
+                "boku ga inai shirangao sekai\n" +
+                "honto wa sa kidzuite'ru\n" +
+                "hito wa kawatte yuku mono desho?\n" +
+                "\n" +
+                "sayonara nante kikoenai furi shite'tara\n" +
+                "oitekare 'n da\n" +
+                "\n" +
+                "sutando bai mi- onegai\n" +
+                "boku wa boku wa modoranai tte kimeta 'n da\n" +
+                "iki mo dekinai yoru wo koete\n" +
+                "kimi ni aitai kanau no nara\n" +
+                "sutando bai yu- onegai\n" +
+                "hanarebanare tsuyoku nareru no nara\n" +
+                "susumu michi ga machigatte'tatte ii\n" +
+                "kienai no wa kimi e no omoi dake nanoni\n" +
+                "\n" +
+                "kimi no itami ni kidzukenakatta kara\n" +
+                "uso wo tsuitemo soba ni irareru nara\n" +
+                "boku wo sasageyou\n" +
+                "\n" +
+                "sutando bai mi- onegai\n" +
+                "boku wa boku wa tsuyoku nareru no kana\n" +
+                "kimi ga ima koko ni inakutemo\n" +
+                "te wo nobasu jishin wo kure yo\n" +
+                "sutando bai yu- onegai\n" +
+                "nanimokamo wo topparatte shimaitai\n" +
+                "namida ga ame ni sarawarete'ku\n" +
+                "kimi no netsu ni dakaretai dake nan da"
+                // Add more songs here
+            };
+
+            return songLyrics[songTitle] || null;
+        }
+      </script>
+    <!-- akhir js lirik -->
+
+
+    <!-- footer -->
+    <footer class="text-center p-3" style="background-color: #807562;">
+        <p>Created by <a href="https://www.instagram.com/nasruladitya_/" class="text-white fw-bold">@nasruladitya</a></p>
+    </footer>
+    <!-- akhir footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

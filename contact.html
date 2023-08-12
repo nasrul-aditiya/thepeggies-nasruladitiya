@@ -24,29 +24,27 @@
             background-color: #cca66074;
         }
         .judul img {
-  max-width: 100%;
-  height: auto; /* This ensures the aspect ratio is maintained */
-}
+            max-width: 100%;
+            height: auto; /* This ensures the aspect ratio is maintained */
+        }
         .floating-window {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  z-index: 1000;
-}
-
-.floating-content {
-  text-align: center;
-}
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            z-index: 1000;
+        }
+        .floating-content {
+            text-align: center;
+        }
     </style>
   </head>
   <body>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fed078;">
@@ -101,9 +99,7 @@
         <h1>CONTACT</h1>
         <img src="images/Line 1.png" alt="Line">
       </div>
-        
     </div>
-
     <!-- akhir judul -->
 
     <!-- konten -->
@@ -112,27 +108,28 @@
             <div class="row">
                 <div class="col-md-5 animate__animated animate__fadeInUp animate__delay-1s">
                     <h2>Nasrul Ent.</h2>
-                    <p>Sebuah perusahaan label musik independen yang berbasis di Singkawang,Indonesia. Didirikan oleh Nasrul Aditiya bersama kakak kandungnya, Chris Hemsworth pada tahun 2023. Saat ini Nasrul Ent. memiliki dua divisi usaha utama yaitu Nasrul Management (Nasrul Man.) dan Nasrul Production (Nasrul Pro.).
+                    <p>
+                      Sebuah perusahaan label musik independen yang berbasis di Singkawang,Indonesia. Didirikan oleh Nasrul Aditiya bersama kakak kandungnya, Chris Hemsworth pada tahun 2023. Saat ini Nasrul Ent. memiliki dua divisi usaha utama yaitu Nasrul Management (Nasrul Man.) dan Nasrul Production (Nasrul Pro.).
                     </p>
                 </div>
                 <div class="col-md p-3 mb-3 animate__animated animate__fadeInUp animate__delay-1s" style="background-color: white; border-radius: 5px;">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nama (wajib diisi)</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nasrul Aditiya">
-                      </div>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email (wajib diisi)</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-                      </div>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Judul</label>
                         <input type="text" class="form-control" id="exampleFormControlInput3">
-                      </div>
-                      <div class="mb-3">
+                    </div>
+                    <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <button id="submitButton" type="button" class="btn btn-dark">Kirim</button>
+                    </div>
+                    <button id="submitButton" type="button" class="btn btn-dark">Kirim</button>
                 </div>
             </div>
         </div>
@@ -146,6 +143,7 @@
     </footer>
     <!-- akhir footer -->
 
+    <!-- floating window -->
     <div class="floating-window" id="floatingWindow">
       <div class="floating-content">
         <h3>Konfirmasi Pengiriman Pesan</h3>
@@ -158,48 +156,49 @@
         <button id="cancelButton" class="btn btn-danger">Batal</button>
       </div>
     </div>
+    <!-- akhir floating window -->
 
+    <!-- script animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var submitButton = document.getElementById("submitButton");
-    var floatingWindow = document.getElementById("floatingWindow");
-    var confirmButton = document.getElementById("confirmButton");
-    var cancelButton = document.getElementById("cancelButton");
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var submitButton = document.getElementById("submitButton");
+        var floatingWindow = document.getElementById("floatingWindow");
+        var confirmButton = document.getElementById("confirmButton");
+        var cancelButton = document.getElementById("cancelButton");
 
-    submitButton.addEventListener("click", function() {
-        var nama = document.getElementById("exampleFormControlInput1").value;
-        var email = document.getElementById("exampleFormControlInput2").value;
-        var judul = document.getElementById("exampleFormControlInput3").value;
-        var pesan = document.getElementById("exampleFormControlTextarea1").value;
+        submitButton.addEventListener("click", function() {
+            var nama = document.getElementById("exampleFormControlInput1").value;
+            var email = document.getElementById("exampleFormControlInput2").value;
+            var judul = document.getElementById("exampleFormControlInput3").value;
+            var pesan = document.getElementById("exampleFormControlTextarea1").value;
 
-        if (nama === "" || email === "" || judul === "" || pesan === "") {
-            alert("Semua field harus diisi.");
-        } else {
-            document.getElementById("namaKonfirmasi").textContent = nama;
-            document.getElementById("emailKonfirmasi").textContent = email;
-            document.getElementById("judulKonfirmasi").textContent = judul;
-            document.getElementById("pesanKonfirmasi").textContent = pesan;
-            floatingWindow.style.display = "block";
-        }
-    });
+            if (nama === "" || email === "" || judul === "" || pesan === "") {
+                alert("Semua field harus diisi.");
+            } else {
+                document.getElementById("namaKonfirmasi").textContent = nama;
+                document.getElementById("emailKonfirmasi").textContent = email;
+                document.getElementById("judulKonfirmasi").textContent = judul;
+                document.getElementById("pesanKonfirmasi").textContent = pesan;
+                floatingWindow.style.display = "block";
+            }
+        });
 
-    confirmButton.addEventListener("click", function() {
-        // Lakukan tindakan yang diperlukan setelah konfirmasi
-        alert("Pesan berhasil dikirim!");
-        floatingWindow.style.display = "none";
-    });
+        confirmButton.addEventListener("click", function() {
+            // Lakukan tindakan yang diperlukan setelah konfirmasi
+            alert("Pesan berhasil dikirim!");
+            floatingWindow.style.display = "none";
+        });
 
-    cancelButton.addEventListener("click", function() {
-        alert("Pengiriman pesan dibatalkan.");
-        floatingWindow.style.display = "none";
-    });
-});
-</script>
-
+        cancelButton.addEventListener("click", function() {
+            alert("Pengiriman pesan dibatalkan.");
+            floatingWindow.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>

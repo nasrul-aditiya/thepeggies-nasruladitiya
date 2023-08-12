@@ -15,7 +15,7 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
 
     <title>Lyrics</title>
     <style>
@@ -24,13 +24,12 @@
             background-color: #cca66074;
         }
         .judul img {
-  max-width: 100%;
-  height: auto; /* This ensures the aspect ratio is maintained */
-}
+          max-width: 100%;
+          height: auto; /* This ensures the aspect ratio is maintained */
+        }
     </style>
   </head>
   <body>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fed078;">
@@ -68,10 +67,10 @@
               </ul>
               <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
+              </li>
+              <li class="nav-item">
                   <a class="nav-link" href="store.html">Store</a>
-                </li>
+              </li>
             </li>
           </ul>
         </div>
@@ -85,7 +84,6 @@
         <h1>LYRICS</h1>
         <img src="images/Line 1.png" alt="Line">
       </div>
-        
     </div>
 
     <!-- akhir judul -->
@@ -95,13 +93,14 @@
         <div class="container animate__animated animate__fadeInUp animate__delay-1s">
             <div class="d-flex justify-content-center mb-5 " style="display: flex; flex-wrap: wrap;">
                 <button type="button" class="btn btn-primary active mb-3 me-3" onclick="displayLyrics('CENTIMETER')">CENTIMETER</button>
-                <button type="button" class="btn btn-success mb-3 me-3" onclick="displayLyrics('KIMINOSEI')">KIMI NO SEI</button>
+                <button type="button" class="btn btn-success mb-3 me-3" onclick="displayLyrics('KIMI NO SEI')">KIMI NO SEI</button>
                 <button type="button" class="btn btn-light mb-3 me-3" onclick="displayLyrics('FOOTPRINTS')">FOOTPRINTS</button>
-                <button type="button" class="btn btn-danger mb-3 me-3" onclick="displayLyrics('DREAMYJOURNEY')">DREAMY JOURNEY</button>
-                <button type="button" class="btn btn-dark mb-3 me-3" onclick="displayLyrics('STANDBYME')">STAND BY ME</button>
+                <button type="button" class="btn btn-danger mb-3 me-3" onclick="displayLyrics('DREAMY JOURNEY')">DREAMY JOURNEY</button>
+                <button type="button" class="btn btn-dark mb-3 me-3" onclick="displayLyrics('STAND BY ME')">STAND BY ME</button>
             </div>
             <div class="lirik text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">
-                <p id="song-lyrics"></p>
+              <h2 id="song-title" class="mb-4"></h2>  
+              <p id="song-lyrics"></p>
             </div>
         </div>
     </div>
@@ -115,18 +114,19 @@
         };
         function displayLyrics(songTitle) {
             var lyrics = getLyrics(songTitle);
-
+            var songTitleElement = document.getElementById("song-title");
             if (lyrics) {
                 document.getElementById("song-lyrics").innerText = lyrics;
+                songTitleElement.innerText = songTitle;
             } else {
                 document.getElementById("song-lyrics").innerText = "Lyrics not available for this song.";
             }
         }
-
         function getLyrics(songTitle) {
         // Create an object to store song lyrics by title
             var songLyrics = {
-            "CENTIMETER":  "[Chorus]\n" +
+            "CENTIMETER":  
+                "[Chorus]\n" +
                 "Unmei nante ienai\n" +
                 "Ato nan senchi chikazukeba iin darou\n" +
                 "Kimi ga ii to ienai mama mitsumeteru ushirosugata\n" +
@@ -181,7 +181,8 @@
                 "Tadoritsuita toki wa kimi ni\n" +
                 "Daijoubu da yo boku ga saki ni iu kara\n" +
                 "Kimi ga suki da owaranai kono omoi ga todokimasu you ni\n",
-            "KIMINOSEI": "Kimi no sei kimi no sei kimi no sei de watashi\n" +
+            "KIMI NO SEI": 
+                "Kimi no sei kimi no sei kimi no sei de watashi\n" +
                 "Okubyou de kakko tsukanai\n" +
                 "Kimi no sei da yo\n" +
                 " \n" +
@@ -229,7 +230,8 @@
                 "Konna yoru wa munasawagi shika shinai yo\n" +
                 "Haato no mashingan kamaete\n" +
                 "Yoyuu bukkoiteru kimi ni neraiuchi suru no sa",
-            "FOOTPRINTS": "Sayonara sa ikanakucha\n" +
+            "FOOTPRINTS": 
+                "Sayonara sa ikanakucha\n" +
                 "Boku yo boku ni nare to sakebu\n" +
                 "Tadoritsuku saki de kimi ni\n" +
                 "Mou ichido deaitai no sa\n" +
@@ -285,7 +287,8 @@
                 "Bokura nokosu ashiato\n" +
                 "Mou ichido kasanaru you ni\n" +
                 "Mou ichido deaeru you ni",
-            "DREAMYJOURNEY": "'Nee bokutachi wa kono mama motto tooku made yukeru yo ne'\n" +
+            "DREAMY JOURNEY": 
+                "'Nee bokutachi wa kono mama motto tooku made yukeru yo ne'\n" +
                 "Kizutsuita mune wa, mada hirihiri to oto wo tatete\n" +
                 "Boku wo aseraseru kedo demo ne, mada ne,\n" +
                 "Hakushi datta chizu wa kakikake no mama\n" +
@@ -318,7 +321,8 @@
                 "Mirai wa subete bokura no mono sa hora mae wo mite\n" +
                 "Doriimii jaanii hitotsuzutsu de ii arinomama wo\n" +
                 "Shoumei suru no sa ima kono basho de",
-            "STANDBYME": "sutando bai mi- onegai\n" +
+            "STAND BY ME": 
+                "sutando bai mi- onegai\n" +
                 "boku wa boku wa tsuyoku nareru no kana\n" +
                 "namida ga ame ni sarawarete'ku\n" +
                 "kimi no netsu ni dakaretai\n" +
@@ -376,7 +380,6 @@
                 "kimi no netsu ni dakaretai dake nan da"
                 // Add more songs here
             };
-
             return songLyrics[songTitle] || null;
         }
       </script>
@@ -389,6 +392,7 @@
     </footer>
     <!-- akhir footer -->
 
+    <!-- script animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

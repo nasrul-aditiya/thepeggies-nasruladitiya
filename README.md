@@ -37,10 +37,12 @@ Skema warna akan terinspirasi dari nama dari fanclub The Peggies itu sendiri, ya
 Website akan menampilkan tata letak bersih dan intuitif dengan navigasi yang mudah. Setiap bagian akan memiliki desain yang khas untuk menjaga pengalaman visual yang baik.
 
 ### Typography
-Font yang mudah dibaca dan modern akan digunakan untuk meningkatkan kejelasan baca di berbagai perangkat. Ukuran dan gaya font akan dipilih untuk meningkatkan pengalaman pengguna secara keseluruhan.  
-Font yang digunakan adalah  [`Poppins`](https://fonts.googleapis.com/css2?family=Poppins).
+Font yang mudah dibaca dan modern akan digunakan untuk meningkatkan kejelasan baca di berbagai perangkat. Ukuran dan gaya font akan dipilih untuk meningkatkan pengalaman pengguna secara keseluruhan. Font yang digunakan adalah  [`Poppins`](https://fonts.googleapis.com/css2?family=Poppins).
 ### Imagery
+Gambar berkualitas tinggi dari band akan dimasukkan ke seluruh situs untuk menciptakan lingkungan yang mendalam dan menarik secara visual serta mengenalkan para member kepada orang awam.
 
 ### Responsive
+Website akan dirancang agar responsif, memastikan pengalaman yang mulus di berbagai perangkat, termasuk desktop, tablet, dan smartphone. Hal ini dipermudah dengan penggunaan framework CSS bernama [`Bootstrap 5`](https://getbootstrap.com/).
 
 ## Conclusion
+Dokumentasi ini memberikan gambaran umum tentang UX, kebutuhan pengguna, dan pilihan desain untuk pengembangan Website Fanbase The Peggies. Dengan menerapkan elemen-elemen ini, tujuannya adalah menciptakan platform online yang berwarna dan menarik hati yang mengumpulkan para penggemar dan merayakan musik dari The Peggies.

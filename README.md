@@ -3,7 +3,7 @@
 ![display-showcase](images/peggies.jpg)
 
 ## Introduction
-Selamat datang di dokumentasi pengembangan website fanbase untuk The Peggies, sebuah band populer asal Jepang. Dokumen ini bertujuan untuk memberikan wawasan tentang Pengalaman Pengguna (UX), kebutuhan pengguna, dan pilihan desain yang diambil selama proses pengembangan.
+Selamat datang di dokumentasi pengembangan website fanbase untuk The Peggies, sebuah band populer asal Jepang. Dokumen ini bertujuan untuk memberikan wawasan tentang Pengalaman Pengguna (UX) dan pilihan desain yang diambil selama proses pengembangan.
 
 ## User Experience (UX)
 

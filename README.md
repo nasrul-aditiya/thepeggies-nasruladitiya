@@ -46,3 +46,10 @@ Website akan dirancang agar responsif, memastikan pengalaman yang mulus di berba
 
 ## Conclusion
 Dokumentasi ini memberikan gambaran umum tentang UX, kebutuhan pengguna, dan pilihan desain untuk pengembangan Website Fanbase The Peggies. Dengan menerapkan elemen-elemen ini, tujuannya adalah menciptakan platform online yang berwarna dan menarik hati yang mengumpulkan para penggemar dan merayakan musik dari The Peggies.
+
+## Visit my website
+
+### Ini adalah tampilan website setelah di Hosting
+```
+[https://nasrul-aditiya.000webhostapp.com](https://nasrul-aditiya.000webhostapp.com)
+```

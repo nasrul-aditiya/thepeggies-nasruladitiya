@@ -31,11 +31,14 @@ Audiens utama untuk website ini termasuk penggemar The Peggies, baik yang sudah 
 ## Design Choices
 
 ### Color scheme
+Skema warna akan terinspirasi dari nama dari fanclub The Peggies itu sendiri, yaitu PGBee. Dengan warna dasar kuning madu (honey) dan Color Scheme monochromatic untuk menciptakan suasana yang energetik dan menarik secara visual.
 
 ### Layout
+Website akan menampilkan tata letak bersih dan intuitif dengan navigasi yang mudah. Setiap bagian akan memiliki desain yang khas untuk menjaga pengalaman visual yang baik.
 
 ### Typography
-
+Font yang mudah dibaca dan modern akan digunakan untuk meningkatkan kejelasan baca di berbagai perangkat. Ukuran dan gaya font akan dipilih untuk meningkatkan pengalaman pengguna secara keseluruhan.  
+Font yang digunakan adalah  [`Poppins`](https://fonts.googleapis.com/css2?family=Poppins).
 ### Imagery
 
 ### Responsive

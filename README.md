@@ -15,10 +15,14 @@ Audiens utama untuk website ini termasuk penggemar The Peggies, baik yang sudah 
 #### Home
 
 #### About
+-Biography
+-Pictures
 
-#### Band News
+#### Tour Date
 
 #### Discography
+-Lyrics
+-Sample Trackes
 
 #### Contact
 
